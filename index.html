@@ -1,0 +1,173 @@
+{% load static %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{%static 'padaria/style.css' %}">
+</head>    
+<section id="Home">
+    <nav>
+        <div class="logo">
+            <img src="{% static 'imagens/padaria.png'%}">
+        </div>
+
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#SobreNos">Sobre Nós</a></li>
+            <li><a href="#Menu">Menu</a></li>
+        </ul>
+
+        <div class="contato">
+            <a href="#contato">Contato</a>
+        </div>
+
+    </nav>
+
+    <div class="home-main">
+
+        <div class="home-img">
+            <div class="home-imagem">
+            <img src="{% static 'imagens/pao.jpeg'%}">
+            </div>
+        </div>    
+    
+
+        <div class="home-img">
+            <div class="home-texto">
+            <h1>SEJA BEM VINDO(A) PADARIA BOM GOSTO</h1>
+        
+            </div>    
+        </div>
+    </div>
+         
+    
+</section>
+
+<div id="SobreNos" class="sobre">
+    <div class="sobre-main">
+
+       
+         <div class="imagem">
+             <img src="{% static 'imagens/waffles.png'%}">
+         </div>    
+       
+
+        <div class="sobre-texto">
+            <h1>Sobre nós</h1>
+            <p>Localizada na área central de Brasília. A Padaria Bom gosto é um negócio local e familiar. fundada em 2015. Contamos com grande variedades de pães e derivados, tortas, bolos, doces caseiros. Temos também chá da tarde de Terça à Sexta. Venha nos fazer uma visita.</p>
+        </div>        
+    </div>
+</div>
+
+<!--Menu-->
+
+<div class="menu" id="Menu">
+    
+    <h1>Menu</h1>
+        
+
+    <div class="menu-box">
+        <div class="menu-card">
+
+            <div class="menu-imagem">
+               <img src="{% static 'imagens/croissant.jpeg'%}">
+            </div>
+
+            <div class="menu-info">
+                <h2>Croissant</h2>
+                <p>Croissant de Chocolate e Tradicional</p>
+                <h3>R$ 6,00</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-box">
+        <div class="menu-card">
+
+            <div class="menu-imagem">
+               <img src="{% static 'imagens/pao com choc.jpeg'%}"> 
+            </div>
+
+            <div class="menu-info">
+                <h2>Pão com Chocolate</h2>
+                <p>Delicioso Pão com Chocolate</p>
+                <h3>R$ 4,00</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-box">
+        <div class="menu-card">
+
+            <div class="menu-imagem">
+               <img src="{% static 'imagens/torta alema.jpeg'%}"> 
+            </div>
+
+            <div class="menu-info">
+                <h2>Torta Alemã</h2>
+                <p>Deliciosa Torta Alemã</p>
+                <h3>R$ 7,00</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-box">
+        <div class="menu-card">
+
+            <div class="menu-imagem">
+               <img src="{% static 'imagens/latte.jpeg'%}">
+            </div>
+
+            <div class="menu-info">
+                <h2>Latte</h2>
+                <p>Latte 350ml</p>
+                <h3>R$ 8,00</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-box">
+        <div class="menu-card">
+
+            <div class="menu-imagem">
+               <img src="{% static 'imagens/bolo limao.jpeg'%}">
+            </div>
+
+            <div class="menu-info">
+                <h2>Bolo de Limão</h2>
+                <p>Fatia Bolo de Limão</p>
+                <h3>R$ 8,00</h3>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div class="contatos" id="contato">
+        <h1>Contato</h1>
+        <div class="container-form">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15353.644780675457!2d-47.9128893!3d-15.8349713!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a255ac54e5865%3A0xccb35721f77a92e8!2sIESB%20Sul!5e0!3m2!1spt-BR!2sbr!4v1680887872834!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form>
+                <h3>ENTRE EM CONTATO</h3>
+                <div class="input-form">
+        
+                    <input type="text" placeholder="Nome">
+                    
+                </div>
+
+                <div class="input-form">
+                    <span><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" placeholder="Email" autocomplete="email" required>
+                </div>
+
+                <div class="input-form">
+                    <span><ion-icon name="call-outline"></ion-icon></span>
+                    <input type="number" placeholder="Telefone" autocomplete="tel">
+                </div>
+
+                <button>Enviar</button>
+            </form>
+        </div>
+    </div>
+</footer>
+
